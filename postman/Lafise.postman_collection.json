@@ -1,0 +1,130 @@
+{
+  "info": {
+    "_postman_id": "0e724b15-8bbd-4337-9ee0-6c764c8c0aa2",
+    "name": "Lafise",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "9422326",
+    "_collection_link": "https://go.postman.co/collection/9422326-0e724b15-8bbd-4337-9ee0-6c764c8c0aa2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Emitir Poliza",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"clienteId\": 1,\r\n  \"matricula\": \"M 123456\",\r\n  \"marca\": \"Toyota\",\r\n  \"modelo\": \"Hilux\",\r\n  \"anio\": 2022,\r\n  \"valorComercial\": 25000.00,\r\n  \"coberturasIds\": [1, 2]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5270/api/poliza/emitir",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5270",
+          "path": [
+            "api",
+            "poliza",
+            "emitir"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Hitorial Polizas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5270/api/poliza",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5270",
+          "path": [
+            "api",
+            "poliza"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Detalle Poliza",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5270/api/poliza/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5270",
+          "path": [
+            "api",
+            "poliza",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clientes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5270/api/catalogos/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5270",
+          "path": [
+            "api",
+            "catalogos",
+            "clientes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Coberturas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5270/api/catalogos/coberturas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5270",
+          "path": [
+            "api",
+            "catalogos",
+            "coberturas"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
