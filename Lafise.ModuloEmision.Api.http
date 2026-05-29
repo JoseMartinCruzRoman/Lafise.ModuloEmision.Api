@@ -1,0 +1,6 @@
+@Lafise.ModuloEmision.Api_HostAddress = http://localhost:5270
+
+GET {{Lafise.ModuloEmision.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
